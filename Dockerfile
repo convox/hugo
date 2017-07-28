@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y curl python-pip
-RUN pip install pygments
+RUN pip install --pre pygments pygments-markdown-lexer
 
 ARG HUGO_VERSION=0.25.1
 
